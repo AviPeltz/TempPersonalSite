@@ -1,2 +1,0 @@
-# TempPersonalSite
-Temporary personal site 
