@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-export default function Page({ children }: { children: React.ReactNode }) {
+export default function Page() {
   return (
     <main className={styles.main}>
       {/* start of cube animation */}
@@ -20,7 +20,6 @@ export default function Page({ children }: { children: React.ReactNode }) {
       <div className={styles.blueball}></div>
       <div className={styles.tealball}></div>
        {/* end of color balls */}
-      {children}
       <footer className={styles.footer}>
         <p>handcrafted with love by © Avi Peltz 2024</p>
       </footer>
