@@ -15,6 +15,11 @@ export default function Page({ children }: { children: React.ReactNode }) {
         <div className={styles.img}></div>
       </div>
       {/* end of cube animation */}
+      {/* start of color balls */}
+      <div className={styles.redball}></div>
+      <div className={styles.blueball}></div>
+      <div className={styles.tealball}></div>
+       {/* end of color balls */}
       {children}
     </main>
   );

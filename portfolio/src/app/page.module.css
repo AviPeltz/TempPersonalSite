@@ -4,6 +4,39 @@ background-color: #F5F5F5;
 .over{ 
   overflow: hidden;
  }
+ div.redball{
+  position:absolute;
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  left: 33%;
+  flex-shrink: 0;
+  border-radius: 300px;
+  background: rgba(255, 13, 106, 0.20);
+  filter: blur(75px);
+}
+div.blueball{
+  position:absolute;
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  left: 49.5%;
+  flex-shrink: 0;
+  border-radius: 300px;
+  background: rgba(5, 0, 255, 0.20);
+  filter: blur(75px);
+}
+div.tealball{
+  position:absolute;
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  left: 66%;
+  flex-shrink: 0;
+  border-radius: 300px;
+  background: rgba(0, 255, 224, 0.20);
+  filter: blur(75px);
+}
  .cube {
   position: absolute;
   top: 80vh;
