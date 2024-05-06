@@ -20,9 +20,7 @@ export default function Page() {
       <div className={styles.blueball}></div>
       <div className={styles.tealball}></div>
        {/* end of color balls */}
-      <footer className={styles.footer}>
-        <p>handcrafted with love by © Avi Peltz 2024</p>
-      </footer>
+
     </main>
   );
 }

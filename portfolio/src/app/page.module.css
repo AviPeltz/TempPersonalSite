@@ -1,14 +1,7 @@
 .main{
 background-color: #F5F5F5;
 }
-.footer{
-  position: fixed;
-  color: #8568D9;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-}
+
 .over{ 
   overflow: hidden;
  }
