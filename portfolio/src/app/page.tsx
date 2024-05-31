@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 
 export default function Page() {
   return (
-    <main className={styles.main}>
+    <div className={styles.main}>
       {/* start of cube animation */}
       <div className={styles.over}>
         <div className={styles.cube}></div>
@@ -21,6 +21,6 @@ export default function Page() {
       <div className={styles.tealball}></div>
        {/* end of color balls */}
 
-    </main>
+    </div>
   );
 }
