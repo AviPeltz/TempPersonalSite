@@ -2,15 +2,10 @@
 
 div.featuredProjectContainer{
     display: flex;
-    width: 1000px;
-    max-width: 1000px;
-    padding: 4px 24px;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 32px 64px;
-    flex: 1 0 0;
-    flex-wrap: wrap;
+    padding: 6px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 h2.featuredProjectGallery{
     color:#6B6B6B;
@@ -71,6 +66,21 @@ p.featuredProjectCard{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+div.featureProjectCardThumbnail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    margin: 4px;
+    
+    
+}
+div.featuredProjectCardContent{
+    padding: 2px;
 }
 div.featuredProjectCardContent:hover{
     background-color: #f1f1f1;

@@ -10,7 +10,7 @@ import { robotoMono }from "./fonts";
 import styles from "./FeatureProjectGallery.module.css";
 
 
-const projectList = [
+const featureList = [
 {
     id:0, 
     title: "BioGlyph", 
@@ -29,7 +29,7 @@ const projectList = [
 },
 {   
     id:2, 
-    title: "ForeverFresh", 
+    title: "Default", 
     description: "Computer vision based quality assessment for fresh produce",
     thumbnail:foreverfreshIcon,
     link:"link",
@@ -37,22 +37,39 @@ const projectList = [
 },
 {   
     id:3, 
-    title: "BioArtBot", 
+    title: "new", 
     description: "Liquid handling robot trained to paint with GMO bacteria",
     thumbnail:bioartbotIcon,
     link:"https://www.bioartbot.org/",
     tags: ["Featured", "Technical", "Art", "Design", "Electronics", "Software", "Mechatronics"],
 },
 ];
-export default function FeaturedProjectGallery({projects = projectList}){
+export interface Project {
+    id: number;
+    title: string;
+    description: string;
+    thumbnail: any;
+    link: string;
+    tags: string[];
+
+};
+interface FeaturedProjectGalleryProps {
+    projects: Project[];
+    heading: string;
+}
+
+
+export default function FeaturedProjectGallery({ projects, heading }: FeaturedProjectGalleryProps) {
     return (
         <div className={styles.featuredProjectContainer}>
-            <h2 className={styles.featuredProjectGallery}>Featured Projects  ---------------------------------------------------------------|</h2>
+            <h2 className={styles.featuredProjectGallery}>{heading}  ---------------------------------------------------------------|</h2>
             <div className={styles.featuredProjectGallery}>
                 {projects.map(project => (
                     <div key={project.id} className={styles.featuredProjectCard}>
                         <a href={project.link} target="_blank">
-                        <Image src={project.thumbnail} alt={project.title} width={150} height={150} className={styles.featuredProjectCard}/>
+                        <div className={styles.featureProjectCardThumbnail}>
+                            <Image src={project.thumbnail} alt={project.title} width={150} height={150} className={styles.featuredProjectCard}/>
+                        </div>
                         <div className={styles.featuredProjectCardContent}>
                             <h3 className={styles.featuredProjectCard}>{project.title}</h3>
                             <p className={styles.featuredProjectCard}>{project.description}</p>
