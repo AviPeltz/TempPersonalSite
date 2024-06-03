@@ -66,7 +66,7 @@ export default function FeaturedProjectGallery({ projects, heading }: FeaturedPr
             <div className={styles.featuredProjectGallery}>
                 {projects.map(project => (
                     <div key={project.id} className={styles.featuredProjectCard}>
-                        <a href={project.link} target="_blank">
+                        <a href={project.link} className={styles.featuredProjectCard} target="_blank">
                         <div className={styles.featuredProjectCardThumbnail}>
                             <Image src={project.thumbnail} alt={project.title} width={150} height={150} className={styles.featuredProjectCard}/>
                         </div>
