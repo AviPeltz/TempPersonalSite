@@ -107,14 +107,10 @@ const featuredProjectList : Project[] = [
 
 export default function Page() {
     return(
-        <section>
-
-            <div>
+        <section className={styles.projectPageContent}>
                 <FeaturedProjectGallery  projects={featuredProjectList} heading="Featured projects" />
                 {/* - Other Projects -- */}
                 <FeaturedProjectGallery projects={otherProjectList} heading="Other projects" />
-            </div>
-
         </section>
     );
 }

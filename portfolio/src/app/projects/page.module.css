@@ -7,3 +7,8 @@ h2.featuredProjectGallery{
     font-size: 16px;
 
 }
+
+section.projectPageContent{
+    display: table;
+    margin: auto;
+}

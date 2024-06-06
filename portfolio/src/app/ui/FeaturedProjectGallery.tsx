@@ -62,7 +62,8 @@ interface FeaturedProjectGalleryProps {
 export default function FeaturedProjectGallery({ projects, heading }: FeaturedProjectGalleryProps) {
     return (
         <div className={styles.featuredProjectContainer}>
-            <h2 className={styles.featuredProjectGallery}>{heading}  ---------------------------------------------------------------|</h2>
+           <h2 className={styles.featuredProjectGallery}>{heading}</h2>
+           <span className={styles.projectGalleryTitle}></span>
             <div className={styles.featuredProjectGallery}>
                 {projects.map(project => (
                     <div key={project.id} className={styles.featuredProjectCard}>
