@@ -36,15 +36,22 @@ div.navlinkUnselected{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    color: #000;
+}
+div.navlinkUnselected:hover{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset, 0px 2px 12px 0px rgba(255, 255, 255, 0.25) inset;
+    color:#6F5DDD;
 }
 a.navlinkUnselected{
-    color: #000;
     font-family: "Roboto Mono";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
+
 
 div.navlinkSelected{
     display: flex;

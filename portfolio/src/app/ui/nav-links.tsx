@@ -4,6 +4,7 @@ import styles from './nav-link.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import navBrand from '../../../public/NavBrand.png';
+import { useState } from 'react';
 
 // // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
@@ -15,8 +16,19 @@ const links =[
 ];
 
 export default function NavBar() {
+    const [selected, setSelected] = useState(links);
 
-
+    function handleClick(e : any) {
+        const key = e.target.key;
+        const newLinks = selected.map(link => {
+            if (link.id === key) {
+                return {...link, isSelected: true};
+            } else {
+                return {...link, isSelected: false};
+            }
+        });
+        setSelected(newLinks);
+    }
     return(
         <div className={styles.navbar}>
             <div className={styles.navBrand}>
@@ -32,7 +44,7 @@ export default function NavBar() {
                      </div>
                      : 
                      <div key={link.id} className={styles.navlinkUnselected}>
-                        <Link key={link.id} href={link.href} className={styles.navlinkUnselected}>{link.name}</Link> 
+                        <Link onClick={handleClick} key={link.id} href={link.href} className={styles.navlinkUnselected}>{link.name}</Link> 
                      </div>
                 ))}
 
