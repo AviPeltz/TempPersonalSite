@@ -19,15 +19,21 @@ export default function NavBar() {
 
     return(
         <div className={styles.navbar}>
-            <Link href='/'>
-                <Image src={navBrand} alt="NavBrand" className={styles.navbrand}/>
-            </Link>
+            <div className={styles.navBrand}>
+                <Link href='/'>
+                        <Image src={navBrand} alt="navBrand" className={styles.navBrand}/>
+                </Link>
+            </div>
             <div className={styles.navlinks}>
                 {links.map(link => (
                     link.isSelected ?
-                     <Link key={link.id} href={link.href} className={styles.navlinkSelected}>{link.name}</Link> 
+                    <div className={styles.navlinkSelected} key={link.id}>
+                        <Link key={link.id} href={link.href} className={styles.navlinkSelected}>{link.name}</Link> 
+                     </div>
                      : 
-                     <Link key={link.id} href={link.href} className={styles.navlinkUnselected}>{link.name}</Link> 
+                     <div key={link.id} className={styles.navlinkUnselected}>
+                        <Link key={link.id} href={link.href} className={styles.navlinkUnselected}>{link.name}</Link> 
+                     </div>
                 ))}
 
             </div>
