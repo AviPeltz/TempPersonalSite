@@ -31,12 +31,13 @@ div.nav{
 }
 div.navLink{
     display: flex;
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
     color: #000;
+    border-radius: 8px;
+    
 }
 div.navLink:hover{
     border-radius: 8px;
@@ -54,7 +55,6 @@ a.navLink{
 }
 div.navLink.active{
     display: flex;
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
