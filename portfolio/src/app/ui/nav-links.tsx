@@ -23,7 +23,7 @@ export default function NavBar() {
         <div className={styles.navbar}>
             <div className={styles.navBrand}>
                 <Link href='/'>
-                        <Image src={navBrand} alt="navBrand" className={styles.navBrand}/>
+                    <Image src={navBrand} alt="navBrand" className={styles.navBrand} quality={100}/>
                 </Link>
             </div>
             <div className={styles.nav}>
