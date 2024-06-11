@@ -30,9 +30,9 @@ export default function Page() {
           />
         </div>
         <div className={styles.textContent}>
-          <div className={styles.animatedTitle}>Hi! 👋 I'm Avi.</div>
+          <div className={styles.animatedTitle}>Hi! 👋 I&apos;m Avi.</div>
           <p className={styles.bio}>I&apos;ve been working on machine learning related problems for about 8+ years now, and have been programming since I was 13... I really love to make cool shit..<br/><br/>
-          Currently working on <span className={styles.textSpecial}>BioGlyph</span>, we’re building a copilot helping scientist design the next generation of protein therapeutics.</p>
+          Currently working on <span className={styles.textSpecial}>BioGlyph</span>, we&rsquo;re building a copilot helping scientist design the next generation of protein therapeutics.</p>
         </div>
       </div>
     </div>
