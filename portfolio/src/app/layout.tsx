@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { inter } from "./ui/fonts";
+import { inter, robotoMono } from "./ui/fonts";
 import Navbar from "./ui/nav-links";
 import "./globals.css";
 
