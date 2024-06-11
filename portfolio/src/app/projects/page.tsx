@@ -28,16 +28,9 @@ const featuredProjectList : Project[] = [
         link:"https://www.tensormaker.com/",
         tags: ["Featured", "Technical", "Art", "Design", "Electronics", "Software", "Mechatronics"],
     },
+
     {   
         id:2, 
-        title: "ForeverFresh", 
-        description: "Computer vision based quality assessment for fresh produce",
-        thumbnail:foreverfreshIcon,
-        link:"link",
-        tags: ["Featured", "Technical", "Art", "Design", "Electronics", "Software", "Mechatronics"],
-    },
-    {   
-        id:3, 
         title: "BioArtBot", 
         description: "Liquid handling robot trained to paint with GMO bacteria",
         thumbnail:bioartbotIcon,
@@ -62,6 +55,7 @@ const featuredProjectList : Project[] = [
             link:"https://www.tensormaker.com/",
             tags: ["Featured", "Technical", "Art", "Design", "Electronics", "Software", "Mechatronics"],
         },
+
         {   
             id:2, 
             title: "Deep learning Workstation build", 
@@ -72,10 +66,10 @@ const featuredProjectList : Project[] = [
         },
         {   
             id:3, 
-            title: "Real Vegan Cheese Project", 
-            description: "Liquid handling robot trained to paint with GMO bacteria",
-            thumbnail:defaultIcon,
-            link:"https://www.bioartbot.org/",
+            title: "ForeverFresh", 
+            description: "Computer vision based quality assessment for fresh produce",
+            thumbnail:foreverfreshIcon,
+            link:"link",
             tags: ["Featured", "Technical", "Art", "Design", "Electronics", "Software", "Mechatronics"],
         },
         {   
@@ -102,6 +96,7 @@ const featuredProjectList : Project[] = [
             link:"https://www.bioartbot.org/",
             tags: ["Featured", "Technical", "Art", "Design", "Electronics", "Software", "Mechatronics"],
         },
+
         ];
 
 

@@ -1,0 +1,30 @@
+div.blogContainer{
+    display: flex;
+    padding: 6px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+
+}
+div.blogHeader{
+    display: flex;
+    max-width: 800px;
+    padding: 8px 0px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-bottom: 2px dotted #8B8B8B;
+ 
+
+}
+h1.blogHeader{
+    flex: 1 0 0;
+    color: #6B6B6B;
+    font-family: "Roboto Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin:auto;
+}

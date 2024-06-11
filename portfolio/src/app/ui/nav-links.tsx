@@ -42,11 +42,13 @@ export default function NavBar() {
                         Blog
                     </Link>
                 </div>
+                {/*
                 <div className={`${styles.navLink} ${pathname === '/contact' ? styles.active : ''}`}>
                     <Link className={`${styles.navLink} ${pathname === '/contact' ? styles.active : ''}`} href="/contact">
                         Contact
                     </Link>
                 </div>
+                 */}
                 {/*
                 {links.map(link => (
                     link.isSelected ?
