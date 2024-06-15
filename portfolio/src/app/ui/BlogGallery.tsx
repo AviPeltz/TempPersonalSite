@@ -65,7 +65,22 @@ const blogPostsTests = [
         tags: ["Featured", "Technical", "Art", "Design", "Electronics", "Software", "Mechatronics"],
     },
     ];
-
+    export interface Post {
+        id: number;
+        title: string;
+        description: string;
+        thumbnail: any;
+        datePosted: string;
+        link: string;
+        tags: string[];
+    
+    };
+    {/*interface FeaturedProjectGalleryProps {
+        projects: Project[];
+        heading: string;
+    }*/}
+    
+    
 
 export default function BlogGallery(){
     return(

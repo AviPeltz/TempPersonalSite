@@ -79,6 +79,52 @@ a {
 html{
   background-color: #F5F5F5;
 }
+div.backgroundContainer{
+
+}
+div.backgroundRed{
+  z-index: -1;
+  position: absolute;
+  left: 33.33%;
+  top: -150px;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  background: rgba(255, 13, 106, 0.20);
+  filter: blur(75px);
+}
+div.backgroundPurple{
+  z-index: -1;
+  position: absolute;
+  left: 40%;
+  top: -150px;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  background: rgba(5, 0, 255, 0.20);
+  filter: blur(75px);
+
+
+}
+div.backgroundTeal{
+  z-index: -1;
+  position: absolute;
+  left: 56.66%;
+  top: -150px;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  background: rgba(0, 255, 224, 0.20);
+  filter: blur(75px);
+
+}
+/*
+
+  -- Add Responsive View --for background colors
+ 
+*/
+
+
 /*
 * {
   box-sizing: border-box;
