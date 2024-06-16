@@ -84,6 +84,6 @@ const blogPostsTests = [
 
 export default function BlogGallery(){
     return(
-        <div>BlogGallery</div>
+        <div>Blog</div>
     );
 }

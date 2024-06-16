@@ -89,7 +89,35 @@ span.textSpecial{
     line-height: normal;
 }
 
+@media screen and (max-width: 768px){
+    div.contentContainer{
 
+    }
+    div.socialContainer{
+        
+    }
+    div.aboutContent{
+
+    }
+    div.thumbnail img{
+        width: 100px;
+        height: 100px;
+    }
+    div.textContent{
+
+    }
+    div.animatedTitle{
+
+    }
+    p.bio{
+  
+    }
+    span.textSpecial{
+
+    }
+
+    
+}
 
 
 
